@@ -1,0 +1,480 @@
+Login.css
+* {
+    padding: 0px;margin: 0px;
+}
+body {
+    /* background: url(back.jpg); */
+    background: -webkit-linear-gradient(top, #32a86d, #32a8a0, #3e32a8);
+    background-attachment: fixed;
+    /* background-position-y:-55px;
+    background-position-x: 20px; */
+    margin: auto;
+    font-family: "discreet";
+}
+@font-face {
+    font-family: saya;
+    src: url(Museo_Slab_500.otf);
+}
+#wrap {
+    margin: auto;
+    width: 75%;
+    height: 100%;
+    /* background: #4582a3; */
+	border-radius: 10px;
+	padding-bottom: 50px;
+    padding-top: 5px;
+    margin-top: 16px;
+    transition: all .5s ease-in;
+}
+/* awal header */
+header {
+    height: 11.5%;
+    width: 95.5%;
+    background: url(gambars.jpg);
+    background-position-y: center;
+    margin: 15px 15px 0px 15px;
+    box-shadow: 2px 4px 10px 3px rgb(0, 0, 0, 0.5);
+    border: 2px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+}
+header h1 {
+    font-family: saya;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 45px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+header h1:hover {
+    text-decoration: underline;
+}
+/* logo */
+header img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    opacity: 0.5;
+    transition: opacity .2s ease-in;
+}
+header img:hover {
+    opacity: 1;
+}
+/* logo */
+header p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+/* akhir header */
+nav {
+    background: #538a8c;
+	width: 95.5%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	height: 50px;
+	border: 2px solid black;
+	margin: 0px 15px 15px 15px;
+	box-shadow: 2px 4px 10px 3px rgb(0, 0, 0, 0.5);
+	overflow: hidden;
+    transition: transform .2s ease-in;
+
+}
+nav:hover {
+    transform: scale(1.02, 1.02);
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline-block;
+	width: 110px;
+	height: 25px;
+	text-align: center;
+}
+nav li a {
+    text-decoration: NONE;
+    color: black;
+    font-size: 20px;
+}
+nav ul li:hover {
+    background: #ffffff;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	text-decoration: underline ;
+	box-sizing: border-box;
+}
+nav #login {
+    background: #ffffff;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	text-decoration: underline ;
+	box-sizing: border-box;
+}
+nav ul #login:active {
+    background: #dddddd;
+}
+nav ul li:active {
+    background: #dddddd;
+}
+/* awal main */
+main {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px 20px 10px 20px;
+    font-family: "arial Unicode MS";
+}
+/* yang Silahkan Isi Formulir Di Bawah Ini awal */
+main #pembuka{
+    width: 92%;
+    height: 110px;
+    background: white;
+    border: 2px solid black;
+    border-top: 10px solid black;
+    border-radius: 10px;
+    margin-left: -90px;
+    margin: 10px 10px 25px 0px;
+    padding: 0px 5px 0px 25px;
+    overflow: hidden;
+    box-shadow: 2px 4px 10px 3px rgb(0, 0, 0, 0.5);
+    text-align: center;
+
+}
+main #pembuka p {
+    font-size: 35px;
+    position: relative;
+    top: -25px;
+    
+}
+#pembuka span{
+    position: relative;
+    top: -50px;
+}
+/* yang Silahkan Isi Formulir Di Bawah Ini akhir */
+/* form 1 awal */
+
+main #first {
+    border: 1px solid rgb(0, 0, 0,);
+    border-top: 45px solid black;
+    width: 92.3%;
+    height: 120px;
+    padding: 5px 5px 30px 25px;
+    background: white;
+    margin: 0px 10px 10px 0;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px 3px rgb(0, 0, 0, 0.5);
+    position: relative;
+    transition: bordder-right .3s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+main #first:hover {
+    border-right: 10px solid blue;
+}
+main #first #login {
+    position: absolute;
+    top: -58px;
+    left: 25px;
+    color: white;
+}
+main #first p {
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+main #first input {
+    width: 75%;
+    height: 23px;
+    border: none;
+    outline: none;
+    border-bottom: 0.1px solid grey;
+    box-sizing: border-box;
+    transition: border-bottom .3s;
+    transition-timing-function: ease-in-out;
+    font-size: 17.5px;
+}
+main #first input:focus{
+    border-bottom: 3px solid blue;
+}
+main #first input:focus:invalid{
+    border-bottom: 3px solid red;
+}
+/* form 1 akhir */
+/* form 2 awal */
+main #kedua, #dua, #pass {
+    border: 1px solid grey;
+    border-top: 10px solid black;
+    width: 92.3%;
+    height: 120px;
+    padding: 5px 5px 30px 25px;
+    background: white;
+    margin: 25px 10px 10px 0;
+    margin-left: 0px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px 3px rgb(0, 0, 0, 0.5);
+    transition: border-right .3s ;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+main #kedua:hover {
+    border-right: 10px solid blue;
+}
+main #dua:hover {
+    border-right: 10px solid blue;
+}
+main #pass:hover {
+    border-right: 10px solid blue;
+}
+main #first p {
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+main #kedua input {
+    width: 75%;
+    height: 23px;
+    border: none;
+    outline: none;
+    border-bottom: 0.1px solid grey;
+    box-sizing: border-box;
+    transition: border-bottom .2s;
+    transition-timing-function: ease-in-out;
+    font-size: 17.5px;
+}
+main #kedua p {
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-transform: capitalize;
+
+}
+main #kedua input:focus{
+    border-bottom: 3px solid blue;
+}
+main #kedua input:focus:invalid{
+    border-bottom: 3px solid red;
+}
+
+/* form 2 akhir */
+/* form 3 awal */
+main #dua p {
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-transform: capitalize;
+
+}
+main #dua #sini{
+    text-align: right;
+    font-size: 15px;
+    margin-left: 20px;   
+    position: relative;
+    right: 25px;
+    float: right;
+    bottom: 7.5px;
+}
+main #dua #sini a {
+    text-decoration: none;
+    color: black;
+
+}
+main #dua #sini a:hover {
+    text-decoration: underline;
+    color: grey;
+}
+main #dua #sini a:active {
+    color: blue;
+
+}
+main #dua input {
+    width: 75%;
+    height: 23px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid grey;
+    transition: border-bottom .2s ease-in-out;
+    box-sizing: border-box;
+    font-size: 17.5px;
+}
+main #dua input:focus {
+    border-bottom: 3px solid blue;
+}
+main #dua input:focus:invalid{
+    border-bottom: 3px solid red;
+}
+/* form 3 akhir */
+/* form pass awal */
+main #pass p {
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-transform: capitalize; 
+}
+main #pass input {
+    width: 75%;
+    height: 23px;
+    border: none;
+    outline: none;
+    border-bottom: 0.1px solid grey;
+    box-sizing: border-box;
+    transition: border-bottom .2s;
+    transition-timing-function: ease-in-out;
+    font-size: 17.5px;
+}
+main #pass input:focus {
+    border-bottom: 3px solid blue;
+}
+main #pass input:focus:invalid {
+    border-bottom: 3px solid red;
+}
+main #pass #woi{
+    text-align: right;
+    font-size: 15px;
+    margin-left: 20px;   
+    position: relative;
+    right: 25px;
+    float: right;
+    bottom: 7.5px;
+}
+main #pass #woi a {
+    text-decoration: none;
+    color: black;
+
+}
+main #pass #woi a:hover {
+    text-decoration: underline;
+    color: grey;
+}
+main #pass #woi a:active {
+    color: blue;
+} 
+/* form pass awal */
+/* form submit awal */
+main #submit  {
+    text-align: center;
+    margin: 20px;
+}
+#submit input{
+    border: none;
+    outline: none;
+    background: white;
+    width: 125px;
+    height: 50px;
+    border: 2px solid gray;
+    border-radius: 50px;
+    transition: all .2s;
+    /* transition: color 1s; */
+    transition-timing-function: ease-in-out;
+    font-weight: bold;
+    color: black;
+    box-shadow: 1px 1px 4px 4px black;
+    margin: auto;
+}
+main #submit input:hover {
+    background: white;
+    color: black;
+    /* box-shadow: 0 0 10px 0 #3d3e3f inset, 0 0 10px 4px #3498db; */
+    box-shadow: 0 0 10px 0 black inset, 0 0 10px 4px black;
+}
+main #submit input:active {
+    background: #dddddd;
+}
+/* form submit akhir*/
+/* akhir main */
+/* awal footer */
+#pem {
+    margin: 0px auto;
+    width: 80%;
+    position: relative;
+}
+footer {
+    width: 90%;
+    height: 100px;
+    background: -webkit-linear-gradient(bottom, darkgreen, green, yellow);
+    border: 5px solid yellow;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0px auto;
+    box-sizing: border-box;
+}
+footer p {
+    text-align: center;
+}
+#box1 {
+    width: 5%;
+    height: 75px;
+    border: 5px solid yellow;
+    border-right: none;
+    border-bottom: none;
+    border-top-left-radius: 100px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+#box2 {
+    width: 5%;
+    height: 75px;
+    border:  5px solid yellow;
+    border-top-right-radius: 100px;
+    position: absolute;
+    border-left: none;
+    border-bottom: none;
+    bottom: 0px;
+    right: 0px;
+}
+/* akhir footer */
+/* bag luar awal */
+#bag_luar{
+    position: relative;
+    width: 10.5%;
+    height: 250px;
+    border: 2px solid black;
+    top: 35px;
+    right: 15px;
+    position: fixed;
+    background: lightblue;
+    z-index: 2;
+    box-shadow: 1px 6px 15px 4px rgb(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-radius: 5px;
+    transition: transform .2s ease-in-out;
+    }
+    #bag_luar:hover {
+        transform: scale(1.05, 1.05);
+    }
+    #bag_luar p  {
+        text-align: center;
+    }
+    #bag_luar #box {
+        width: 64%;
+        position: relative;
+        height: 90px;
+        border: 2px solid black ;
+        margin: 20px 25px;
+        border-radius: 10px;
+        top: -10px;
+        margin: auto;
+        overflow: hidden;
+    }
+    #bag_luar #box img {
+        width: 80%;
+        height: 70px;
+        border-radius: 10px;
+        background: black;
+        opacity: 0.5;
+        transition: opacity .2s ease-in;
+        margin: 10% 0px 0px 10%;
+    }
+    #bag_luar #box img:hover {
+        opacity: 1;
+    }
+    #bag_luar #p b{
+        margin: 5px;
+        position: relative;
+        top: -10px;
+        text-align: center;
+    }
+    /* bag luar akhir*/

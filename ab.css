@@ -1,0 +1,238 @@
+.css
+*{
+    padding: 0px;
+    margin: 0px;
+}
+@font-face {
+    font-family: saya;
+    src: url(Museo_Slab_500.otf);
+}
+body {
+    background: -webkit-linear-gradient(top, #32a86d, #32a8a0, #3e32a8);
+    background-attachment: fixed;
+    margin: auto;
+    font-family: "discreet";
+}
+#wrap{
+    margin: auto;
+    width: 75%;
+    height: 100%;
+    background: white;
+	border-radius: 10px;
+	padding-bottom: 50px;
+    padding-top: 5px;
+    margin-top: 16px;
+}
+header {
+    height: 110px;
+    width: 95.5%;
+    background: url(gambars.jpg);
+    background-position-y: center;
+    margin: 15px 15px 0px 15px;
+    box-shadow: 2px 4px 10px 3px rgb(0, 0, 0, 0.5);
+    border: 2px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+}
+header img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    left: 8.5px;
+    opacity: 0.5;
+    transition: opacity .2s ;
+    transition-timing-function: ease-in-out ;
+}
+header img:hover {
+    opacity: 1;
+}
+header h1 {
+    font-family: saya;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 45px;
+    margin-bottom: 0px;
+    margin-top: 0px
+}
+header h1:hover {
+    text-decoration: underline;
+}
+header p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+/* akhir heaader */
+nav {
+    width: 95.5%;
+    height: 50px;
+    background: #538a8c;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 2px solid black;
+    margin: 0px 15px 0px 15px;
+    box-shadow: 2px 4px 10px 3px rgb(0, 0, 0, 0.5);
+    transition: transform .2s ease-in-out;
+
+}
+nav:hover {
+    transform: scale(1.02, 1.02);
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline-block;
+	width: 110px;
+	height: 25px;
+	text-align: center;
+}
+nav li a {
+    text-decoration: NONE;
+    color: black;
+    font-size: 20px;
+}
+nav ul li:hover {
+    background: #ffffff;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	text-decoration: underline ;
+	box-sizing: border-box;
+}
+nav #about {
+    background: #ffffff;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	text-decoration: underline ;
+	box-sizing: border-box;
+}
+nav ul #about:active {
+    background: #dddddd;
+}
+nav ul li:active {
+    background: #dddddd;
+}
+/* akhir nav */
+/* awal main */
+main{
+width: 95.9%;
+height: 100%;
+/* background: white; */
+border-radius: 10px;
+margin-left: 2%;
+/* box-shadow: 2px 4px 10px 3px rgb(0, 0, 0, 0.5); */
+}
+main h1 {
+    border-bottom: 5px solid grey;
+    font-family:"museo slab 500";
+    text-transform: lowercase;
+    font-size: 40px;
+}
+main p {
+    text-indent: 40px;
+    text-align: justify;
+}
+/* akhir main */
+#penutup {
+    margin: auto;
+	height: 100%;
+	width: 90%;
+    transition: background 1.5s ease-in-out;
+    position: relative;
+    top: 7.5px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+footer {
+    width: 90%;
+    height: 150px;
+    background: -webkit-linear-gradient(bottom, #003b46, #075758, #66a5ad, #c4dfe6 );
+    border: 2px solid black;
+    border-bottom: none;
+    box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    margin-left: 5%;
+    margin-bottom: 0px;
+    box-shadow: 2px 4px 10px 3px rgb(0, 0, 0, 0.5);
+}
+#box1 {
+    width: 5%;
+    height: 120px;
+    border: 2px solid black;
+    position: absolute;
+    border-right: none;
+    border-top-left-radius: 50px;
+    border-bottom: none;
+    bottom: 0px;
+    left: 0px;
+}
+#box2 {
+    width: 5%;
+    height: 120px;
+    border: 2px solid black;
+    position: absolute;
+    border-left: none;
+    border-top-right-radius: 50px;
+    border-bottom: none;
+    bottom: 0px;
+    right: 0px;
+}
+/* awal bag luar */
+#bag_luar{
+    position: relative;
+    width: 10.5%;
+    height: 250px;
+    border: 2px solid black;
+    top: 35px;
+    right: 15px;
+    position: fixed;
+    background: lightblue;
+    z-index: 2;
+    box-shadow: 1px 6px 15px 4px rgb(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-radius: 5px;
+    transition: transform .2s ease-in-out;
+    }
+    #bag_luar:hover {
+        transform: scale(1.05, 1.05);
+    }
+    #bag_luar p  {
+        text-align: center;
+    }
+    #bag_luar #box {
+        width: 64%;
+        position: relative;
+        height: 90px;
+        border: 2px solid black ;
+        margin: 20px 25px;
+        border-radius: 10px;
+        top: -10px;
+        margin: auto;
+        overflow: hidden;
+    }
+    #bag_luar #box img {
+        width: 80%;
+        height: 70px;
+        border-radius: 10px;
+        background: black;
+        opacity: 0.5;
+        transition: opacity .2s ease-in;
+        margin: 10% 0px 0px 10%;
+    }
+    #bag_luar #box img:hover {
+        opacity: 1;
+    }
+    #bag_luar #p b{
+        margin: 5px;
+        position: relative;
+        top: -10px;
+        text-align: center;
+    }
+    /* bag luar akhir*/

@@ -1,0 +1,250 @@
+homecss.css
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background: -webkit-linear-gradient(bottom, #f54242, #f5ad42, #f5ef42, #dddddd,lightblue, #0095ff);
+    background-attachment: fixed;
+    font-family: "discreet", "arial narrow", "arial Unicode MS", "segoi UI";
+}
+@font-face {
+    font-family: saya;
+    src: url(Museo_Slab_500.otf);
+}
+#wrap {
+    margin: auto;
+	height: 100%;
+	width: 75%;
+    /* background: black; */
+	border-radius: 10px;
+	padding-bottom: 20px;
+    padding-top: 5px;
+    margin-top: 15px;
+    transition: background 1.5s ease-in-out;
+}
+/* awal header */
+header {
+    background:  url(gambars.jpg);
+    width: 95.5%;
+    height: 142.5px;
+    margin-top: 10px;
+    margin: 15px 15px 0px 15px;
+    border: 2px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-position-y: center;
+    box-shadow: 2px 4px 10px 3px rgb(0, 0, 0, 0.5);
+    text-align: center;
+    position: relative;
+}
+header img {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
+    transition: opacity .2s ease-in-out;
+}
+header img:hover{
+    opacity: 1;
+}
+header h1 {
+    font-family: saya;
+    display: inline-block;
+    margin-bottom: 0px;
+    font-size: 45px;
+    cursor: pointer;
+}
+header h1:hover {
+    text-decoration: underline;
+}
+header p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+/* akhir header */
+/* awal nav */
+nav {
+    background: #538a8c;
+	width: 95.5%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	height: 50px;
+	border: 2px solid black;
+	margin: 0px 15px 15px 15px;
+	box-shadow: 2px 4px 10px 3px rgb(0, 0, 0, 0.5);
+	overflow: hidden;
+    transition: transform .2s ease-in;
+
+}
+nav:hover {
+    transform: scale(1.02, 1.02);
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline-block;
+	width: 110px;
+	height: 25px;
+	text-align: center;
+}
+nav li a {
+    text-decoration: NONE;
+    color: black;
+    font-size: 20px;
+}
+nav ul li:hover {
+    background: #ffffff;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	text-decoration: underline ;
+	box-sizing: border-box;
+}
+nav #home {
+    background: #ffffff;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	text-decoration: underline ;
+	box-sizing: border-box;
+}
+nav ul #home:active {
+    background: #dddddd;
+}
+nav ul li:active {
+    background: #dddddd;
+}
+/* akhir nav */
+/* awal main */
+main {
+    width: 95.9%;
+    height: 100%;
+    background: white;
+    border-radius: 10px;
+    margin-left: 1.5%;
+    box-shadow: 2px 4px 10px 3px rgb(0, 0, 0, 0.5);
+}
+main h1 {
+    font-family: "museo slab 500";
+    border-bottom: 5px solid grey;
+    opacity: 0.9;
+}
+main p {
+    text-indent: 40px;
+    text-align: justify;
+    opacity: 0.85;
+}
+main p #belajar {
+    text-decoration: underline;
+    color: black;
+}
+main #padding_main {
+    padding: 20px;
+}
+/* akhir main */
+/* awal footer */
+#penutup {
+    margin: auto;
+	height: 100%;
+	width: 90%;
+    transition: background 1.5s ease-in-out;
+    position: relative;
+    top: 7.5px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+footer {
+    width: 90%;
+    height: 150px;
+    background: -webkit-linear-gradient(bottom, #003b46, #075758, #66a5ad, #c4dfe6 );
+    border: 2px solid black;
+    border-bottom: none;
+    box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    margin-left: 5%;
+    margin-bottom: 0px;
+    box-shadow: 2px 4px 10px 3px rgb(0, 0, 0, 0.5);
+}
+#box1 {
+    width: 5%;
+    height: 120px;
+    border: 2px solid black;
+    position: absolute;
+    border-right: none;
+    border-top-left-radius: 50px;
+    border-bottom: none;
+    bottom: 0px;
+    left: 0px;
+}
+#box2 {
+    width: 5%;
+    height: 120px;
+    border: 2px solid black;
+    position: absolute;
+    border-left: none;
+    border-top-right-radius: 50px;
+    border-bottom: none;
+    bottom: 0px;
+    right: 0px;
+}
+/* akhir footer */
+/* bag luar  */
+#bag_luar{
+    position: relative;
+    width: 10.5%;
+    height: 250px;
+    border: 2px solid black;
+    top: 35px;
+    right: 15px;
+    position: fixed;
+    background: lightblue;
+    z-index: 2;
+    box-shadow: 1px 6px 15px 4px rgb(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-radius: 5px;
+    transition: transform .2s ease-in-out;
+    }
+    #bag_luar:hover {
+        transform: scale(1.05, 1.05);
+    }
+    #bag_luar p  {
+        text-align: center;
+    }
+    #bag_luar #box {
+        width: 64%;
+        position: relative;
+        height: 90px;
+        border: 2px solid black ;
+        margin: 20px 25px;
+        border-radius: 10px;
+        top: -10px;
+        margin: auto;
+        overflow: hidden;
+    }
+    #bag_luar #box img {
+        width: 80%;
+        height: 70px;
+        border-radius: 10px;
+        background: black;
+        opacity: 0.5;
+        transition: opacity .2s ease-in;
+        margin: 10% 0px 0px 10%;
+
+    }
+    #bag_luar #box img:hover {
+        opacity: 1;
+    }
+    #bag_luar #p b{
+        margin: 5px;
+        position: relative;
+        top: -10px;
+        text-align: center;
+    }
+    /* bag luar akhir*/
+/* akhir */
